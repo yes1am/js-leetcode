@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}\\lis.js"
+      "program": "${workspaceFolder}\\longest-substring-without-repeating-characters.js"
     }
   ]
 }
