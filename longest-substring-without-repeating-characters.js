@@ -8,7 +8,7 @@ var lengthOfLongestSubstring = function(s) {
 
   for(let i = 0; i < s.length; i++) {
       let number = ret ? ret - 1 : 0;
-      for(let j = start || i + 1; j <= s.length; j++) {
+      for(let j = start || i; j < s.length; j++) {
         const slice = s.slice(i,j)
           if(!slice.includes(s[j])) {
               number++;
@@ -25,6 +25,6 @@ var lengthOfLongestSubstring = function(s) {
   return max;
 };
 
-// console.log(lengthOfLongestSubstring(" "))
+console.log(lengthOfLongestSubstring(" "))
 console.log(lengthOfLongestSubstring("bbbb"))
 console.log(lengthOfLongestSubstring("abcabcaa"))
